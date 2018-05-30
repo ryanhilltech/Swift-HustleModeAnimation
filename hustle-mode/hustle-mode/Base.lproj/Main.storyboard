@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="hustle_mode" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="darkBlueBG" translatesAutoresizingMaskIntoConstraints="NO" id="RAT-He-uqH">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7lR-NL-xrP">
+                                <rect key="frame" x="119" y="265" width="136" height="136"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="powerButton"/>
+                                <connections>
+                                    <action selector="powerBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mmd-if-Tzi"/>
+                                </connections>
+                            </button>
+                            <view hidden="YES" contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="aPm-6H-JcZ" userLabel="Cloud Holder">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rocketAndStream" translatesAutoresizingMaskIntoConstraints="NO" id="qNJ-BI-l7A">
+                                        <rect key="frame" x="0.0" y="598" width="375" height="20"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="cloudsAndOrangeOval" translatesAutoresizingMaskIntoConstraints="NO" id="IvT-Ja-8fL">
+                                        <rect key="frame" x="-7" y="303" width="382" height="364"/>
+                                    </imageView>
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="HUSTEL MODE:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KBL-IJ-XDH">
+                                        <rect key="frame" x="85" y="428" width="192" height="83"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                        <color key="textColor" red="0.95784346341795024" green="1" blue="0.94269319921742545" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ON" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HSP-Rd-rda">
+                                        <rect key="frame" x="141" y="519" width="80" height="67"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="53"/>
+                                        <color key="textColor" red="0.95784346341795024" green="1" blue="0.94269319921742545" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.29411764705882354" green="0.46274509803921571" blue="0.91764705882352937" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="IvT-Ja-8fL" secondAttribute="trailing" id="4xV-ht-H3o"/>
+                                    <constraint firstItem="IvT-Ja-8fL" firstAttribute="top" secondItem="aPm-6H-JcZ" secondAttribute="top" constant="303" id="GGI-yx-fc0"/>
+                                    <constraint firstAttribute="bottom" secondItem="IvT-Ja-8fL" secondAttribute="bottom" id="elB-v0-RaT"/>
+                                    <constraint firstItem="IvT-Ja-8fL" firstAttribute="leading" secondItem="aPm-6H-JcZ" secondAttribute="leading" id="ouu-22-Vmt"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="RAT-He-uqH" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="54x-LK-zFf"/>
+                            <constraint firstItem="RAT-He-uqH" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="858-Gs-YDK"/>
+                            <constraint firstItem="RAT-He-uqH" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="ABh-RY-L32"/>
+                            <constraint firstItem="aPm-6H-JcZ" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="HJm-k5-DzC"/>
+                            <constraint firstItem="aPm-6H-JcZ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="J4Y-X2-oaz"/>
+                            <constraint firstItem="aPm-6H-JcZ" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="LVM-KD-hbO"/>
+                            <constraint firstItem="aPm-6H-JcZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="oWX-nk-64o"/>
+                            <constraint firstItem="RAT-He-uqH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="tKZ-Fq-AjK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="cloudHolder" destination="aPm-6H-JcZ" id="Sl1-gs-5Jp"/>
+                        <outlet property="darkBlueBG" destination="RAT-He-uqH" id="4g0-ed-T7T"/>
+                        <outlet property="hustleLbl" destination="KBL-IJ-XDH" id="pVe-ll-w8q"/>
+                        <outlet property="onLbl" destination="HSP-Rd-rda" id="EYS-i4-SmE"/>
+                        <outlet property="powerBtn" destination="7lR-NL-xrP" id="CBF-AA-1C6"/>
+                        <outlet property="rocket" destination="qNJ-BI-l7A" id="PPJ-DA-zo2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cloudsAndOrangeOval" width="414" height="477"/>
+        <image name="darkBlueBG" width="414" height="736"/>
+        <image name="powerButton" width="96" height="96"/>
+        <image name="rocketAndStream" width="414" height="672"/>
+    </resources>
+</document>
